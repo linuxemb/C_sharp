@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp6
 {
-    public delegate int WorkPerformedHandler(int hours, workType workType);
-    public delegate void WorkCompleted();
+    //public delegate int WorkPerformedHandler(int hours, workType workType);
+    //public delegate void WorkCompleted();
+
     class worker
     {
-        public event WorkPerformedHandler WorkPerformed;  // ------event define
-                                                          //  public event EventHandler WorkCompleted;  // build in handler  --notify work is done
+        //public event  WorkPerformedHandler WorkPerformed;  // ------event define
+        //                                                 //  public event EventHandler WorkCompleted;  // build in handler  --notify work is done
+        //public event EventHandler WorkCompleted;
+
+        public event EventHandler<WorkPerformedEventArgs> WorkPerformed;
         public event EventHandler WorkCompleted;
 
 
@@ -21,6 +25,7 @@ namespace ConsoleApp6
             
             for  (int i =0; i < hours; i++)
             {
+                System.Threading.Thread.Sleep(1000); //suspends current th for 1 s
                 onWorkPerformed(i + 1, worktype);
 
             }
@@ -29,7 +34,7 @@ namespace ConsoleApp6
 
         }
 
-
+        // add seperate mehthod for each event  
         protected virtual void onWorkPerformed(int hours, workType worktype)
         {
 
@@ -41,10 +46,12 @@ namespace ConsoleApp6
 
             Console.WriteLine("Work Performeded");
 
-           var  del = WorkPerformed as WorkPerformedHandler;
+            //   var  del = WorkPerformed as WorkPerformedHandler;
+            var del = WorkPerformed as EventHandler<WorkPerformedEventArgs>;
             if (del != null)
             {
-                del(hours, worktype);    // Raise evetn
+               //  del(hours, worktype);    // Raise event
+                del(this, new WorkPerformedEventArgs(hours, worktype));
             }
         }
 
