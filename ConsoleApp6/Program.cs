@@ -47,6 +47,7 @@ namespace ConsoleApp6
             {
                 Console.WriteLine("Worker is done");
             };
+            
             worker.dowork(3, workType.golf);
             worker.dowork(7, workType.gotomeetins);
             worker.dowork(5, workType.generatereports);

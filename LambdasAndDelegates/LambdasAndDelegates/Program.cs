@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace LambdasAndDelegates
 {
+    public delegate int BizRuleDelegate(int x, int y);
     class Program
     {
         static void Main(string[] args)
         {
+            // lambda intergrate with delegate make code consize
+            BizRuleDelegate addDel = (x, y) => x + y;
+            BizRuleDelegate multiDel = (x, y) => x * y;
+            var data = new ProcessData();
+            data.Process(2, 3, addDel);
+            data.Process(2, 3, multiDel);
+
             var worker = new Worker();
             //worker.WorkPerformed += Worker_WorkPerformed;
             // assign line 26 worker_workPerformed(obj,evt )to here
