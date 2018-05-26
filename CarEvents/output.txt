@@ -1,0 +1,13 @@
+***** Fun with Events *****
+
+***** Speeding up *****
+CurrentSpeed = 30
+CurrentSpeed = 50
+CurrentSpeed = 70
+=> Critical Message from Car: Careful buddy!  Gonna blow!
+Careful buddy!  Gonna blow!
+CurrentSpeed = 90
+Sorry, this car is dead...
+
+***** Speeding up *****
+
