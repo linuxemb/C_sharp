@@ -1,0 +1,3 @@
+
+Obtained a DelegateCovariance.Car
+Obtained a DelegateCovariance.Sports
