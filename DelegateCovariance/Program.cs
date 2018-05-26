@@ -26,7 +26,9 @@ namespace DelegateCovariance
 
             // Covariance allows this target assignment.
             ObtainVehicalDelegate targetB = new ObtainVehicalDelegate(GetSportsCar);
+            // performe an explicit cast to bbtain access to the members of the devied type
             SportsCar sc = (SportsCar)targetB();
+
             Console.WriteLine("Obtained a {0}", sc);
             Console.ReadLine();
         }

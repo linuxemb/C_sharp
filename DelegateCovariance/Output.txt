@@ -1,3 +1,10 @@
 
 Obtained a DelegateCovariance.Car
 Obtained a DelegateCovariance.Sports
+
+===============
+contravariance allow you to create a singel delegate that can oint to numerous methods that recieve objects related by classical inheritance. 
+
+= to cbotin access to members of derived type,  perforem an explicit cast
+
+
