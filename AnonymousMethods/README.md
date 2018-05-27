@@ -15,3 +15,19 @@ class Program
 	}		  
 	
 }
+
+
+
+
+Aonymous Methods *****
+*****************************
+CurrentSpeed = 30
+CurrentSpeed = 50
+CurrentSpeed = 70
+Eek! Going too fast!  1
+Message from Car: 2 ,Careful buddy!  Gonna blow!
+CurrentSpeed = 90
+Fatal Message from Car: 2, Sorry, this car is dead...
+AboutToBlow event was fired 2 times.
+
+
