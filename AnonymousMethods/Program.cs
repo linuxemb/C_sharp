@@ -12,13 +12,13 @@ namespace AnonymousMethods
             Console.WriteLine("***** Anonymous Methods *****\n");
             Car c1 = new Car("SlugBug", 100, 10);
 
-            int aboutToBlowCounter = 0;
+            int aboutToBlowCounter = 0;  // out var of th anonymous method
 
             // Register event handlers as anonymous methods.
             c1.AboutToBlow += delegate
             {
                 aboutToBlowCounter++;
-                Console.WriteLine("Eek! Going too fast!");
+                Console.WriteLine("Eek! Going too fast! counter ={0}",aboutToBlowCounter );
             };
 
             c1.AboutToBlow += delegate(object sender, CarEventArgs e)
@@ -29,7 +29,9 @@ namespace AnonymousMethods
 
             c1.Exploded += delegate(object sender, CarEventArgs e)
             {
-                Console.WriteLine("Fatal Message from Car: {0}", e.msg);
+                aboutToBlowCounter++;
+                aboutToBlowCounter++;
+                Console.WriteLine("Fatal Message from Car: {0},{1}", e.msg, aboutToBlowCounter);
             };
 
             // This will eventually trigger the events.
