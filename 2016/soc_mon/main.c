@@ -1,19 +1,6 @@
 
 
 
-/*******************************************************************************
-*
-*  FILENAME:     main.c
-*  DESCRIPTION:  The target-specific data sizes
-*
-*
-*  $Rev$
-*  $Date$
-*  $Author$
-*  $HeadURL$
-*
-*
-******************************************************************************/
 #ifndef __INCLUDE_types_
 #define __INCLUDE_types_
 #endif
