@@ -1,3 +1,4 @@
+// BatteryUser.h
 #pragma once
 /*******************************************************************************
 *
@@ -20,7 +21,7 @@
 
 /*******************************************************************************
 *
-*  FILENAME:     BatterySOC.h
+*  FILENAME:     BatteryUser.h
 *
 *  DESCRIPTION:  The target-specific data sizes
 *
@@ -36,40 +37,36 @@
 #define __INCLUDE_types_
 #endif
 
-#include <math.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <stdbool.h>
-#include <stdio.h>
-#include "BatteryUser.h"
 
-#define DIM(a)                        sizeof (a) / sizeof (*(a))
-#define cellVColWork (uint8_t)2
+//#define Tmin (int8_t)(-40) 
+//#define Tmax (int8_t)55
+#define Tmin (int8_t)(25) 
+#define Tmax (int8_t)55
+//#define Tmin (int8_t)(-50) 
+//#define Tmax (int8_t)90
 
 
-typedef struct
-{
-	
-	uint8_t percent;                      // Approximate fullness indicator
-	uint16_t voltage[cellVColWork];                   // Cell voltage
+//#define cellVmin (uint16_t)2200
+//#define cellVmax (uint16_t)5000
 
-} cellCapacity;
+#define SOChigh (uint8_t)(90)
+#define SOClow   (uint8_t)(10)
+//#define cellVmin (uint16_t)2200
+//#define cellVmax (uint16_t)4300
+#define cellVmin (uint16_t)1000
+#define cellVmax (uint16_t)4000
 
- 
-typedef struct
-{
-	uint8_t persent;
-	uint16_t  voltage[newChemCols];
-} cellCapacityNewChem;
+#define cellVTblMax (uint16_t)1000
+#define cellVTblMin  (uint16_t)4000
 
-extern uint8_t temperatureArray[];
-extern cellCapacityNewChem  table_vtSOCNewChem[];
-extern cellCapacity    table_vtSOC[];
-extern cellCapacity table_vSOC[];
-extern uint8_t  tableSizeSOC ; 
+#define newChemCols (uint8_t)4
+//#define stepSOC  (uint8_t)5
+#define stepSOC  (uint8_t)20
+//#define deltaIdxSOC (uint8_t)2  // Where 90%, 10% located in i+2 or sizeof(Array) -2
+//#define newChemRows (uint8_t)21
+#define newChemRows (uint8_t)6
 
 
-uint8_t getSOC(uint16_t cellV,  int8_t ambT, uint8_t soc); 
 
 
 

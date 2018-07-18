@@ -1,19 +1,6 @@
 
 
 
-/*******************************************************************************
-*
-*  FILENAME:     main.c
-*  DESCRIPTION:  The target-specific data sizes
-*
-*
-*  $Rev$
-*  $Date$
-*  $Author$
-*  $HeadURL$
-*
-*
-******************************************************************************/
 #ifndef __INCLUDE_types_
 #define __INCLUDE_types_
 #endif
@@ -52,10 +39,13 @@
             }
       // prepare the row 1 for all temerature ranges
       
-    ret = getSOC(3500, -40,0);
-    printf("soc = %d \n", ret);
-    
+    ret = getSOC(2600, 24,0);
+    printf("soc ======== %d \n", ret);
+
+//       return soc;
+ //   }
    
+
 
       fprintf(fp, "%d,", 9999);  // for place holder
        
@@ -117,5 +107,5 @@
              return 0;   
     } 
             
-           
+          
         

@@ -1,19 +1,5 @@
+//main.c
 
-
-
-/*******************************************************************************
-*
-*  FILENAME:     main.c
-*  DESCRIPTION:  The target-specific data sizes
-*
-*
-*  $Rev$
-*  $Date$
-*  $Author$
-*  $HeadURL$
-*
-*
-******************************************************************************/
 #ifndef __INCLUDE_types_
 #define __INCLUDE_types_
 #endif
@@ -21,10 +7,10 @@
 #include "BatterySOC.h"
 #include <stdio.h>
 
-#define stepV    (uint16_t)50
-#define stepT    (uint8_t)1
 
 
+uint8_t str[100];
+//extern void prepare();
 	  uint8_t soc = 0;
 	 // Create test cases for temperature between Min to Max at range of Cell voltage
      // between VcellMax and VcellMin 
@@ -38,8 +24,10 @@
       uint8_t rowT = 200;
       uint8_t countV = 0;
       uint8_t countT = 0;
+
     int main(int argc, char **argv)
-    { 
+    
+	{ 
             printf(" %d \n" ,temperature);
            FILE *fp;          
              fp = fopen("soc.csv", "w+c");
@@ -47,32 +35,62 @@
              if(fp == NULL)
             {
              printf ("\n fail to open file");
-             return 1;
-                
+             return 1;                
             }
-      // prepare the row 1 for all temerature ranges
-      
-    ret = getSOC(2600, 24,0);
-    printf("soc ======== %d \n", ret);
 
-//       return soc;
- //   }
+			/* for ( uint8_t k = 0; k < 10; k++)
+			 {
+				 fwrite(str,  1, sizeof(str), fp);
+				 printf("Saving...\nSaved.");
+			 }*/
+
+
+    //   prepare the row 1 for all temerature ranges
+    //        
+    //prepare();  //soc1.csv prepare
+    //  
+ 
+			 cellV = cellVmin;
    
+   int data , rc;
+   for (uint8_t i = 0; i < 10; i++)
+   {
+	   str[i] = getSOC(cellV, 33, 0);
+	  
+	   cellV = cellV + 200;
+	   printf("str[i]= %d, \n", str[i]);
+	   /*if (fputs(str, fp) != EOF)
+	   {
+		   rc = 1;
+	   }*/
 
+   }
 
+    
+
+ //  fclose(fp); // or for the paranoid: if (fclose (fout) == eof) rc = 0;
+	     
+ /*  scanf("%d", &data);
+      
+   return ret;
+       }*/
+
+     
+   
       fprintf(fp, "%d,", 9999);  // for place holder
+     
        
       for( uint8_t idx =  0;  idx < 200 ; idx ++)
          {
              uint16_t rowOne = idx * stepV + cellVmin;
                if  (( rowOne  >= (uint16_t)cellVmin)  && (rowOne  <= (uint16_t)cellVmax))
                {                  
-                    countV++;
+				   countV++;
                     fprintf(fp, "%d,", rowOne);
                }
          }
           
-        
+        // GET SOC
         for ( uint8_t j = 0; j < rowT ; j++)      
             { 
             printf("in top level For \n");
@@ -83,36 +101,24 @@
             
             cellV = cellVmin;  // reset cellVmin for next iteration
             
-               if ((temperature < (int8_t)(Tmin)) || (temperature > (int8_t)(Tmax) ))  // done  
-            {
-          printf ( "out of temperature range \n");
-          return 0;
-          }
-                temperature = temperature + stepT;
+              if ((temperature < (int8_t)(Tmin)) || (temperature > (int8_t)(Tmax) ))  // done  
+           {
+        printf ( "out of temperature range \n");
+         return 0;
+         }
+			  temperature = j == 0 ? temperature :  temperature + stepT;
                 // do once at least for start temperature point
                                             
                    for (uint8_t i = 0 ; i < rowV; i ++)
                {
-          //      if  ((cellV < (uint16_t)cellVmin)  || (cellV > (uint16_t)cellVmax))
-           //             {
-            //            break;
-              //          }  
-                    ret = getSOC(cellV,temperature, soc);
-               
-               // Add debug information for invalid soc calculation
-               
-         //      if ((ret < 10 ) || (ret > 90 ))
-           //    {
-             //   fprintf(fp, " Invalid soc calculation !! \n" );
-           //      break;  
-            //   }                         
-             
-         // control output noisy data
-         
-         
-                  fprintf(fp,"%03d, ", ret); 
-                
-               cellV = cellV + stepV ;
+                if  ((cellV < (uint16_t)cellVmin)  || (cellV > (uint16_t)cellVmax))
+                       {
+                      break;
+                    }  
+                    ret = getSOC(cellV,temperature, soc);              
+                 
+                  fprintf(fp,"%03d, ", ret);                 
+                  cellV = cellV + stepV ;
                 }                                                            
             }   
                           
@@ -120,5 +126,6 @@
              return 0;   
     } 
             
-          
+           
         
+		

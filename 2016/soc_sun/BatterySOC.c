@@ -134,7 +134,7 @@ uint8_t getSOC(uint16_t cellV,  int8_t ambT, uint8_t soc)
    return  0;
   }
 */
-  
+ /* 
        if(cellV <  2500 || (cellV > 4020) || (T < -40) || (T > 55))
       
    //   if((cellV <  getMinCellV()) || (cellV > getMaxCellV) || (T < Tmin) || (T > Tmax))
@@ -142,7 +142,7 @@ uint8_t getSOC(uint16_t cellV,  int8_t ambT, uint8_t soc)
              
              return 0;
          }    
-          
+   */       
        
         /* 
 	if ((soc > SOChigh) || (soc < SOClow) || (ambT > Tmax) || (ambT < Tmin))
@@ -194,7 +194,7 @@ uint8_t getSOC(uint16_t cellV,  int8_t ambT, uint8_t soc)
                 table_vSOC[i].percent = table_vtSOC[i].percent;
                            
                 
-                table_vSOC[i].voltage[0] = table_vtSOC[i].voltage[1];
+                table_vSOC[i].voltage[0] = table_vtSOC[i].voltage[0];
 			}
 		
 		// Now we have the Soc Vtable ready for lookup., need do boundery check
@@ -204,57 +204,24 @@ uint8_t getSOC(uint16_t cellV,  int8_t ambT, uint8_t soc)
              
              
       
-     //   if(((cellV < table_vSOC[deltaIdxSOC].voltage[0]))  || ( cellV > table_vSOC[tableSizeSOC - deltaIdxSOC].voltage[0]) )
-     //   {
+      if(((cellV < table_vSOC[0].voltage[0]))  || ( cellV > table_vSOC[tableSizeSOC - 1].voltage[0]) )
+      {
          
-      //      return soc;    
-     //   }        
+         return soc;    
+      }        
       
     
 		// Find table_vSOC position...in Validated Vcell range 10-90 %
-	 while  (cellV >= table_vSOC[idxSOC].voltage[0] && ( idxSOC < tableSizeSOC - 1))
-	 //   while ( idxSOC < tableSizeSOC -deltaIdxSOC)
+	 while  (cellV >= table_vSOC[0].voltage[0] && ( idxSOC < tableSizeSOC - 1))
 		{
             idxSOC++;
         }
 	   // look up soc in table_V for Vcell
-	      // boundery check: if V < vcellmin, put 0 as soc
-	      uint16_t arrayV [tableSizeSOC]; 
-          for ( uint8_t i = 0; i< tableSizeSOC; i++)
-          {
-              arrayV[i]  = table_vSOC[i].voltage[0];
-          } 
               
-       /*   
-          	      if (cellV < getMinCellV(arrayV))
-          {
-              return 0;
-              //cellV = getMinCellV(arrayV) ;
-          }
-          else if (cellV > getMaxCellV(arrayV))
-          {
-              return 100;
-              //cellV =getMaxCellV(arrayV) ;
-          }*/
           
           
-          
-          
-// 	      if (cellV < getMinCellV(arrayV))
-//           {
-//               ret = 0;
-//           }
-//           else if (cellV > getMaxCellV(arrayV))
-//           {
-//               ret = 100;
-//           }
-//           else 
-          {
 		ret = (uint8_t)table_vSOC[idxSOC - 1].percent + (uint8_t)(stepSOC * ((cellV - table_vSOC[idxSOC - 1].voltage[0])) / (table_vSOC[idxSOC].voltage[0] - table_vSOC[idxSOC - 1].voltage[0]));             
-          }
-     //   if (ret > (uint8_t)100)
-      //      return 100;
-       // else
+      printf("soc at %d, is %d \n", T, ret ) ;
         return ret; 
     
 } 
