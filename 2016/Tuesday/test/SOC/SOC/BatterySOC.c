@@ -371,7 +371,7 @@ uint8_t getSOC(uint16_t cellV,  int8_t ambT, uint8_t soc)
 				//Calculate the new voltages by interpolating: 
 
 				if (fromLeft)  // left  + delta
-				{
+			{
 
 					uint16_t tempV = table_vtSOC[i].voltage[1] - table_vtSOC[i].voltage[0];
 					uint16_t deltaT = temperatureArray[indexT] - T;
@@ -387,15 +387,16 @@ uint8_t getSOC(uint16_t cellV,  int8_t ambT, uint8_t soc)
 
 						delta = (uint16_t)(tempV / deltaT) * abs(diffT);
 						printf("tmpv %d,deltaT %d,diffT %d, delta %d\n", tempV, deltaT, diffT, delta);
-						table_vSOC[i].voltage[0] = table_vtSOC[i].voltage[1] + delta;
+					//	table_vSOC[i].voltage[0] = table_vtSOC[i].voltage[1] + delta;
+						table_vSOC[i].voltage[0] = table_vtSOC[i].voltage[0] + delta;
 						printf("delta=%d", delta);
 						printf("vtable_vSOC=%d", table_vSOC[i].voltage[0]);
 						//table_vSOC[i].voltage[0] = table_vtSOC[i].voltage[0]  + (uint16_t)roundf((((float)(table_vtSOC[i].voltage[1] - table_vtSOC[i].voltage[0])
 						//* (temperatureArray[indexT] - T)) / (temperatureArray[indexT + 1] - temperatureArray[indexT])));
 					}
-					}
+			}
 				else   // right  -delta
-				{
+				    {
 					
 					uint16_t tempV = table_vtSOC[i].voltage[1] - table_vtSOC[i].voltage[0];
 					
