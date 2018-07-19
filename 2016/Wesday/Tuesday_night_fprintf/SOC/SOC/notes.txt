@@ -1,0 +1,107 @@
+ ===table_vtSOC @ T= 29 , at indexT=2 ==
+vt[ij] col-row= 0vt[ij] = 1000vt[ij] = 1100vt[ij] col-row= 20vt[ij] = 1500vt[ij] = 1600vt[ij] col-row= 40vt[ij] = 2000vt[ij] = 2100vt[ij] col-row= 60vt[ij] = 2500vt[ij] = 2600vt[ij] col-row= 80vt[ij] = 3000vt[ij] = 3100vt[ij] col-row= 100vt[ij] = 3500vt[ij] = 3600
+vt[ij] col-row= 0vt[ij] = 1000vt[ij] = 1100vt[ij] col-row= 20vt[ij] = 1500vt[ij] = 1600vt[ij] col-row= 40vt[ij] = 2000vt[ij] = 2100vt[ij] col-row= 60vt[ij] = 2500vt[ij] = 2600vt[ij] col-row= 80vt[ij] = 3000vt[ij] = 3100vt[ij] col-row= 100vt[ij] = 3500vt[ij] = 3600
+vt[ij] col-row= 0vt[ij] = 1000vt[ij] = 1100vt[ij] col-row= 20vt[ij] = 1500vt[ij] = 1600vt[ij] col-row= 40vt[ij] = 2000vt[ij] = 2100vt[ij] col-row= 60vt[ij] = 2500vt[ij] = 2600vt[ij] col-row= 80vt[ij] = 3000vt[ij] = 3100vt[ij] col-row= 100vt[ij] = 3500vt[ij] = 3600
+vt[ij] col-row= 0vt[ij] = 1000vt[ij] = 1100vt[ij] col-row= 20vt[ij] = 1500vt[ij] = 1600vt[ij] col-row= 40vt[ij] = 2000vt[ij] = 2100vt[ij] col-row= 60vt[ij] = 2500vt[ij] = 2600vt[ij] col-row= 80vt[ij] = 3000vt[ij] = 3100vt[ij] col-row= 100vt[ij] = 3500vt[ij] = 3600
+vt[ij] !!!!= 0vt[ij] = 1000vt[ij] = 1100
+vt[ij] !!!!= 20vt[ij] = 1500vt[ij] = 1600
+vt[ij] !!!!= 40vt[ij] = 2000vt[ij] = 2100
+vt[ij] !!!!= 60vt[ij] = 2500vt[ij] = 2600
+vt[ij] !!!!= 80vt[ij] = 3000vt[ij] = 3100
+vt[ij] !!!!= 100vt[ij] = 3500vt[ij] = 3600
+vt[ij] = 1000vt[ij] = 1100vt[ij] 2nd= 0 
+vt[ij] = 1100
+vt[ij] = 1500vt[ij] = 1600vt[ij] 2nd= 9504 
+vt[ij] = 1600
+vt[ij] = 2000vt[ij] = 2100vt[ij] 2nd= 99 
+vt[ij] = 2100
+vt[ij] = 2500vt[ij] = 2600vt[ij] 2nd= 0 
+vt[ij] = 2600
+vt[ij] = 3000vt[ij] = 3100vt[ij] 2nd= 8253 
+vt[ij] = 3100
+vt[ij] = 3500vt[ij] = 3600vt[ij] 2nd= 25637 
+vt[ij] = 3600
+
+===========================================CODE
+
+
+
+
+
+	// 1st need printout the new chem table for debuging
+		//fprintf(fpsoc, "vt[00] = %d, %d,%d", table_vtSOCNewChem[0, 0].persent, table_vtSOCNewChem[0, 0].voltage[0], table_vtSOCNewChem[0, 0].voltage[1]);
+		uint8_t  idxT = 2;  //for test
+		uint8_t i, j;
+		for (i = 0; i < newChemCols; i++)
+		{
+			for (j = 0; j < newChemRows; j++)
+			{
+				fprintf(fpsoc, "vt[ij] col-row= %d", table_vtSOCNewChem[i, j].persent);
+				fprintf(fpsoc, "vt[ij] = %d", table_vtSOCNewChem[i, j].voltage[0]);
+				fprintf(fpsoc, "vt[ij] = %d", table_vtSOCNewChem[i, j].voltage[1]);
+
+				
+			}
+			fprintf(fpsoc, "\n");
+		}
+
+
+
+
+
+
+
+//  idxT
+		for (i = 0; i < newChemRows; i++)
+		{
+			//for (j = 0; j < newChemRows; j++)
+			{
+				fprintf(fpsoc, "vt[ij] !!!!= %d", table_vtSOCNewChem[ idxT,i].persent);
+				fprintf(fpsoc, "vt[ij] = %d", table_vtSOCNewChem[ idxT,i].voltage[0]);
+				fprintf(fpsoc, "vt[ij] = %d", table_vtSOCNewChem[ idxT,i].voltage[1]);
+
+
+
+
+			}
+			fprintf(fpsoc, "\n");
+		}
+
+
+
+
+==============================================================
+
+
+
+
+WORKING CODE BELPOW
+
+uint8_t i, j;
+		for (i = 0; i < newChemCols; i++)
+		{
+			for (j = 0; j < newChemRows; j++)
+			{
+				//fprintf(fpsoc, "vt[ij] col-row= %d", table_vtSOCNewChem[i, j].persent);
+				fprintf(fpsoc, "vt[ij] =$$$$$ %d", table_vtSOCNewChem[i, j].voltage[indexT]);
+				table_vtSOC[i].voltage[0] = table_vtSOCNewChem[i,j].voltage[indexT];
+				table_vtSOC[i].voltage[1]  = table_vtSOCNewChem[i, j].voltage[indexT + 1];
+
+
+ 
+ ===table_vtSOC @ T= 29 , at indexT=2 ==
+vt[ij] =$$$$$ 1200vt[ij] =$$$$$ 1700vt[ij] =$$$$$ 2200vt[ij] =$$$$$ 2700vt[ij] =$$$$$ 3200vt[ij] =$$$$$ 3700
+vt[ij] =$$$$$ 1200vt[ij] =$$$$$ 1700vt[ij] =$$$$$ 2200vt[ij] =$$$$$ 2700vt[ij] =$$$$$ 3200vt[ij] =$$$$$ 3700
+vt[ij] =$$$$$ 1200vt[ij] =$$$$$ 1700vt[ij] =$$$$$ 2200vt[ij] =$$$$$ 2700vt[ij] =$$$$$ 3200vt[ij] =$$$$$ 3700
+vt[ij] =$$$$$ 1200vt[ij] =$$$$$ 1700vt[ij] =$$$$$ 2200vt[ij] =$$$$$ 2700vt[ij] =$$$$$ 3200vt[ij] =$$$$$ 3700
+vt[ij] !!!!= 0vt[ij] = 1000vt[ij] = 1100
+vt[ij] !!!!= 20vt[ij] = 1500vt[ij] = 1600
+vt[ij] !!!!= 40vt[ij] = 2000vt[ij] = 2100
+vt[ij] !!!!= 60vt[ij] = 2500vt[ij] = 2600
+vt[ij] !!!!= 80vt[ij] = 3000vt[ij] = 3100
+vt[ij] !!!!= 100vt[ij] = 3500vt[ij] = 3600
+
+
+================================
+
+

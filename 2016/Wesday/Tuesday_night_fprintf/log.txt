@@ -1,0 +1,605 @@
+cell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===1,
+tmpVstep  = 2000,deltaV = 500, delta=0
+SOC= 4, @Vcell=1200,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===1,
+tmpVstep  = 4000,deltaV = 500, delta=0
+SOC= 8, @Vcell=1300,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===1,
+tmpVstep  = 6000,deltaV = 500, delta=0
+SOC= 12, @Vcell=1400,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===1,
+tmpVstep  = 8000,deltaV = 500, delta=0
+SOC= 16, @Vcell=1500,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===2,
+tmpVstep  = 0,deltaV = 500, delta=0
+SOC= 0, @Vcell=1600,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===2,
+tmpVstep  = 2000,deltaV = 500, delta=0
+SOC= 4, @Vcell=1700,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===2,
+tmpVstep  = 4000,deltaV = 500, delta=0
+SOC= 8, @Vcell=1800,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===2,
+tmpVstep  = 6000,deltaV = 500, delta=0
+SOC= 12, @Vcell=1900,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===2,
+tmpVstep  = 8000,deltaV = 500, delta=0
+SOC= 16, @Vcell=2000,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===3,
+tmpVstep  = 0,deltaV = 500, delta=0
+SOC= 0, @Vcell=2100,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===3,
+tmpVstep  = 2000,deltaV = 500, delta=0
+SOC= 4, @Vcell=2200,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===3,
+tmpVstep  = 4000,deltaV = 500, delta=0
+SOC= 8, @Vcell=2300,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===3,
+tmpVstep  = 6000,deltaV = 500, delta=0
+SOC= 12, @Vcell=2400,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===3,
+tmpVstep  = 8000,deltaV = 500, delta=0
+SOC= 16, @Vcell=2500,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===4,
+tmpVstep  = 0,deltaV = 500, delta=0
+SOC= 0, @Vcell=2600,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===4,
+tmpVstep  = 2000,deltaV = 500, delta=0
+SOC= 4, @Vcell=2700,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===4,
+tmpVstep  = 4000,deltaV = 500, delta=0
+SOC= 8, @Vcell=2800,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===4,
+tmpVstep  = 6000,deltaV = 500, delta=0
+SOC= 12, @Vcell=2900,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===4,
+tmpVstep  = 8000,deltaV = 500, delta=0
+SOC= 16, @Vcell=3000,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===5,
+tmpVstep  = 0,deltaV = 500, delta=0
+SOC= 0, @Vcell=3100,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===5,
+tmpVstep  = 2000,deltaV = 500, delta=0
+SOC= 4, @Vcell=3200,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 0,deltaT= 10,diffT= -10, delta=0
+Vcell:1100
+Vcell:1600
+Vcell:2100
+Vcell:2600
+Vcell:3100
+Vcell:3600
+=========================END v  table===
+=========================start to look up table===
+idxSOC===5,
+tmpVstep  = 4000,deltaV = 500, delta=0
+SOC= 8, @Vcell=3300,   @ T= 35
+
+ fwrite() successful, data written to text file
+amt T =35
+index T = 1From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100
+From RIGHT=====
+ ==     tmpv  = 100,deltaT= 10,diffT= -10, delta=100

@@ -13,7 +13,13 @@
 
 #define DIM(a)                        sizeof (a) / sizeof (*(a))
 #define cellVColWork (uint8_t)2
+#define bufferSize (uint8_t)80
+#define SIZE 1
+#define NUMELEM 3
 
+
+#define stepV    (uint16_t)100
+#define stepT    (uint8_t)1
 
 typedef struct
 {
@@ -36,9 +42,15 @@ extern cellCapacity    table_vtSOC[];
 extern cellCapacity table_vSOC[];
 extern uint8_t  tableSizeSOC ; 
 
-
+uint16_t    buffArrary[];
+uint16_t    candidatesVmin[];
+uint16_t    candidatesVmax[];
 uint8_t getSOC(uint16_t cellV,  int8_t ambT, uint8_t soc); 
 
+bool inTemperatureArray( int8_t temperature , int8_t array[]);
+static  uint16_t minCellVForAll;
+static  uint16_t maxCellVForAll;
+static  int8_t a[newChemCols];
 
 
 

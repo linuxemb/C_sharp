@@ -1,7 +1,5 @@
 //main.c
 
-
-
 #ifndef __INCLUDE_types_
 #define __INCLUDE_types_
 #endif
@@ -47,17 +45,17 @@ uint8_t str[100];
 			 }*/
 
 
-    //   prepare the row 1 for all temerature ranges
-    //        
+      // prepare the row 1 for all temerature ranges
+            
     //prepare();  //soc1.csv prepare
-    //  
- 
+      
+      // str[i] = getSOC(2500, -40,0);
 			 cellV = cellVmin;
    
    int data , rc;
    for (uint8_t i = 0; i < 10; i++)
    {
-	   str[i] = getSOC(cellV, 33, 0);
+	   str[i] = getSOC(cellV, 25, 0);
 	  
 	   cellV = cellV + 200;
 	   printf("str[i]= %d, \n", str[i]);
@@ -70,12 +68,12 @@ uint8_t str[100];
 
     
 
- //  fclose(fp); // or for the paranoid: if (fclose (fout) == eof) rc = 0;
-	     
- /*  scanf("%d", &data);
-      
-   return ret;
-       }*/
+   //fclose(fp); // or for the paranoid: if (fclose (fOut) == EOF) rc = 0;
+	  //   
+   //scanf("%d", &data);
+   //   
+   //return ret;
+   //    }
 
      
    

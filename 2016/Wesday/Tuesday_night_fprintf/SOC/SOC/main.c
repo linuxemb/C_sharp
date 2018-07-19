@@ -1,7 +1,5 @@
 //main.c
 
-
-
 #ifndef __INCLUDE_types_
 #define __INCLUDE_types_
 #endif
@@ -54,19 +52,19 @@ uint8_t str[100];
  
 			 cellV = cellVmin;
    
-   int data , rc;
-   for (uint8_t i = 0; i < 10; i++)
-   {
-	   str[i] = getSOC(cellV, 33, 0);
-	  
-	   cellV = cellV + 200;
-	   printf("str[i]= %d, \n", str[i]);
-	   /*if (fputs(str, fp) != EOF)
-	   {
-		   rc = 1;
-	   }*/
+   //int data , rc;
+   //for (uint8_t i = 0; i < 10; i++)
+   //{
+	  // str[i] = getSOC(cellV, 33, 0);
+	  //
+	  // cellV = cellV + 200;
+	  // printf("str[i]= %d, \n", str[i]);
+	  // /*if (fputs(str, fp) != EOF)
+	  // {
+		 //  rc = 1;
+	  // }*/
 
-   }
+  // }
 
     
 
@@ -91,15 +89,15 @@ uint8_t str[100];
                     fprintf(fp, "%d,", rowOne);
                }
          }
-          
+	
         // GET SOC
         for ( uint8_t j = 0; j < rowT ; j++)      
             { 
             printf("in top level For \n");
             printf("temp = %d, \n", temperature);
             
-          //  fprintf(fp," @Temperature of %d \n", temperature); 
-            fprintf(fp,"\n %d, ", temperature);
+        //    fprintf(fp," @Temperature of %d \n", temperature); 
+			fprintf(fp, "\n %d,", temperature);  // for place holder
             
             cellV = cellVmin;  // reset cellVmin for next iteration
             
@@ -108,7 +106,9 @@ uint8_t str[100];
         printf ( "out of temperature range \n");
          return 0;
          }
-			  temperature = j == 0 ? temperature :  temperature + stepT;
+			//  temperature = temperature + stepT;
+				   
+			 temperature = j == 0 ? temperature :  temperature + stepT;
                 // do once at least for start temperature point
                                             
                    for (uint8_t i = 0 ; i < rowV; i ++)
