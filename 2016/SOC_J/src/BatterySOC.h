@@ -13,21 +13,21 @@
 
 
 #define rowsSocTable    21
-#define colsSocTable	    5
-#define colsRangeTable   4
+#define colsSocTable	5
+#define colsRangeTable  4
 #define stepV    (uint16_t)100
-#define stepT    (uint8_t)1
+#define stepT    (index_t)1
 
-typedef uint16_t VcellType;
-typedef int8_t   temperatureType;
-typedef uint8_t  socType;
+typedef uint16_t  Vcell_t;
+typedef int8_t   temperature_t;
+typedef uint8_t  soc_t;
+typedef uint8_t  index_t;
 
 
 extern uint16_t TableSocVirtual[];
 extern int16_t TrangeTbl[]; 
 
-int16_t interpolate(int16_t key, int16_t y1, int16_t y2, int16_t x1, int16_t x2);
-void  buildVirtualTable(temperatureType temperature, int16_t rangeTbl[], uint8_t idxT, uint16_t *virtualTbl, uint8_t lenVirtualTbl);
-
-uint16_t getIndex(int16_t key, int16_t *tbl, uint16_t lenTbl);
-socType getSOC(VcellType Vcell, temperatureType Tamb, socType curSoc);
+int16_t interpolate(int16_t key, int16_t horizenLow, int16_t y2, int16_t x1, int16_t x2);
+void  buildVirtualTable(temperature_t temperature, int16_t rangeTbl[], index_t idxT, uint16_t Tn_Tbl[], index_t lenVirtualTbl);
+index_t getIndex(int16_t key, int16_t tbl[], index_t lenTbl);
+soc_t getSOC(Vcell_t Vcell, temperature_t Tamb, soc_t curSoc);

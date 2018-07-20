@@ -43,7 +43,7 @@ typedef struct
 
 typedef struct
 {	
-	uint8_t persent;
+	indexType persent;
 	uint16_t voltage[newChemCols];
 } cellCapacityNewChem;
 
@@ -122,10 +122,10 @@ const cellCapacityNewChem table_vtSOCNewChem[] =
 
  cellCapacity table_vtSOC[newChemRows];
 
-uint8_t tableSizeSOC = newChemRows;
+indexType tableSizeSOC = newChemRows;
 // Used to retrieve the best temperature segments for interpolation 
-uint8_t getIndexT(int8_t temperature);
+indexType getIndexT(int8_t temperature);
 // Helper function to decide which is the convergence poit, from left or right point of segment
-bool  smartStartGetter(uint8_t indexT,   int8_t temperature);
+bool  smartStartGetter(indexType indexT,   int8_t temperature);
 
 uint16_t bufferArray[newChemCols];
