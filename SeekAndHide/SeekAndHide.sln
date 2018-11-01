@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeekAndHide", "SeekAndHide\SeekAndHide.csproj", "{D6FC3F27-9A2C-4054-8DA7-DA513ED60086}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6FC3F27-9A2C-4054-8DA7-DA513ED60086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FC3F27-9A2C-4054-8DA7-DA513ED60086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FC3F27-9A2C-4054-8DA7-DA513ED60086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FC3F27-9A2C-4054-8DA7-DA513ED60086}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F01C64A-F4C6-4733-BF17-65A487C03991}
+	EndGlobalSection
+EndGlobal
